@@ -6,7 +6,7 @@ metadata:
     run: demo
   name: demo
 spec:
-  replicas: 5
+  replicas: 8
   selector:
     matchLabels:
       app: demo
@@ -18,7 +18,7 @@ spec:
         app: demo
     spec:
       containers:
-        - image: mylandmarktech/maven-web-app:latest
+        - image: mylandmarktech/maven-web-app1:latest
           name: kubernetes
           resources: {}
 status: {}
